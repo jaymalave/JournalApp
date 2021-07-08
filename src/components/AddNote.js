@@ -1,5 +1,6 @@
 import React, {useState, useContext} from 'react'
 import { NoteContext } from './NoteContext'
+import './AddNote.css'
 
 const AddNote = () => {
     const [date, setDate] = useState('')
@@ -19,11 +20,26 @@ const AddNote = () => {
     }
 
     return (
-        <div>
+        <div className = "add-note">
             <form onSubmit = {addNote}>
-                <input type = "text" name="date" value={date} onChange={updateDate}/>
-                <input type = "text" name="note" value={note} onChange={updateNote}/>
-                 <button>Add</button>
+                <div className = "note-form">
+                <input 
+                 type = "text" 
+                 name="date" 
+                 value={date} 
+                 onChange={updateDate} 
+                 className = "date-input"
+                />
+                <br/>
+                <textarea 
+                 type = "text" 
+                 name="note" 
+                 value={note} 
+                 onChange={updateNote} 
+                 className = "note-input"
+                 />
+                 </div>
+                 <button class = "add-btn">Add</button>
             </form>
         </div>
     )

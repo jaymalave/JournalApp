@@ -1,4 +1,5 @@
 import React, {useContext} from 'react'
+import Note from './Note'
 import { NoteContext } from './NoteContext'
 
 const Notes = () => {
@@ -7,10 +8,9 @@ const Notes = () => {
     return (
         <div>
           {notes.map((note) => (
-                 <h1>Date: {note.date} <br/>{note.note}</h1>
+                 <Note date = {note.date} note = {note.note}/>
             ))}
-            </div>
-        
+            </div> 
     )
 }
 

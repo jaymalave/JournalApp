@@ -1,0 +1,26 @@
+
+.note-form {
+    display: block;
+
+}
+
+.add-btn {
+    background-color: black;
+    color: aliceblue;
+    padding: 5px 20px;
+    width: 10vh;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+.date-input {
+    height: 3vh;
+    width: 25vh;
+    margin: 2vh; 
+}
+
+.note-input {
+    height: 10vh;
+    width: 50vh;
+    padding: 5px;
+}
