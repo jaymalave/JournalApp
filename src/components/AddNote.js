@@ -38,8 +38,9 @@ const AddNote = () => {
                  onChange={updateNote} 
                  className = "note-input"
                  />
-                 </div>
                  <button class = "add-btn">Add</button>
+                 </div>
+                 
             </form>
         </div>
     )
