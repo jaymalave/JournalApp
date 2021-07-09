@@ -11,10 +11,10 @@ function App() {
       <h1>Jay's iLog</h1>
       <div className = "nav">
             <ul class = "menu">
-              <li>
+              <li class = "link">
                 <Link to="/add">Add A Note</Link>
               </li>
-              <li>
+              <li class = "link">
                 <Link to="/view">View Notes</Link>
               </li>
             </ul>
@@ -26,6 +26,9 @@ function App() {
             </Switch>
           </div>
        </Router>
+       <div class = "home-page">
+         
+       </div>
     </NoteProvider>
     </div>
   );
