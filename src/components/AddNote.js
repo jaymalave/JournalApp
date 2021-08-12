@@ -15,6 +15,7 @@ const AddNote = () => {
     }
 
     const addNote = (e) => {
+       //POST REQUEST
        e.preventDefault();
        setNotes(prevNotes => [...prevNotes, {date: date, note: note}])
     }
